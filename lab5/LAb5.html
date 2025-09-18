@@ -1,0 +1,176 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shymulo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      background: #fff;
+      border: 3px solid #333;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      padding: 20px 30px;
+    }
+
+    header, nav, section, footer {
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      text-align: center;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #333;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Центрування відео */
+    .video-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    iframe {
+      border-radius: 10px;
+      border: 2px solid #333;
+    }
+
+    footer {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Шапка -->
+    <header>
+      <h1>Лабораторна робота 5</h1>
+    </header>
+
+   
+    <nav>
+      <ul>
+        <li><a href="#grafika">Графіка</a></li>
+        <li><a href="#audio">Аудіо</a></li>
+        <li><a href="#video">Відео</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="grafika">
+  <h2>Зображення фруктів</h2>
+
+  <img src="M:\Коледж\HTML\19 овочі.jpg" alt="Овочі та фрукти" usemap="#map2" width="600">
+
+  <map name="map2">
+    <area shape="circle" coords="90,80,60" href="grape.html" alt="Виноград" title="Виноград">
+    <area shape="rect" coords="400,20,600,120" href="celery.html" alt="Селера" title="Селера">
+    <area shape="circle" coords="300,250,100" href="cabbage.html" alt="Капуста" title="Капуста">
+    <area shape="poly" coords="20,250,100,350,150,300,80,220" href="orange.html" alt="Апельсин" title="Апельсин">
+    <area shape="rect" coords="220,400,420,470" href="carrot.html" alt="Морква" title="Морква">
+  </map>
+</section>
+
+      
+      <section id="audio">
+        <h2>Аудіо</h2>
+        <table>
+          <tr>
+            <th>Назва пісні та виконавець</th>
+            <th>Відтворення</th>
+            <th>Завантажити</th>
+          </tr>
+          <tr>
+  <td>bbno$: Meant to be</td>
+  <td>
+    <audio controls>
+      <source src="bbno-meant_to_be-world79.spcs.bio.mp3" type="audio/mpeg">
+      Ваш браузер не підтримує аудіо.
+    </audio>
+  </td>
+  <td><a href="bbno-meant_to_be-world79.spcs.bio.mp3" download>Завантажити</a></td>
+</tr>
+          <tr>
+            <td>Shotgun Willy,Yung Craka:Mexico</td>
+            <td>
+              <audio controls>
+                <source src="shotgun_willy__yung_craka_-_mexico_(z3.fm).mp3" type="audio/mpeg">
+              </audio>
+            </td>
+            <td><a href="shotgun_willy__yung_craka_-_mexico_(z3.fm).mp3" download>Завантажити</a></td>
+          </tr>
+          <tr>
+            <td>Shotgun Willy,Yung Craka:Oreo</td>
+            <td>
+              <audio controls>
+                <source src="shotgun_willy_feat_yung_craka_-_oreo_(z3.fm).mp3" type="audio/mpeg">
+              </audio>
+            </td>
+            <td><a href="shotgun_willy_feat_yung_craka_-_oreo_(z3.fm).mp3" download>Завантажити</a></td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="video">
+        <h2>Відео The Mercedes AMG CLE 53 Coupe 2025 Test Drive</h2>
+        <div class="video-container">
+          <iframe width="600" height="338"
+            src="https://www.youtube.com/embed/sEceczMx1-8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Виконав студент Шумило Максим 411-і</p>
+      <p>Дата: 18.09.2025</p>
+    </footer>
+  </div>
+</body>
+</html>
